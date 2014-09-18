@@ -24,6 +24,7 @@
 		2AE89D1B162FCDA500200C77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE89CF3162FCDA500200C77 /* Foundation.framework */; };
 		2AE89D23162FCDA500200C77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AE89D21162FCDA500200C77 /* InfoPlist.strings */; };
 		2AE89D26162FCDA500200C77 /* FlashCardSimpleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE89D25162FCDA500200C77 /* FlashCardSimpleTests.m */; };
+		2AE89D8F162FD43200200C77 /* FCSearchDisplayDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE89D8E162FD43200200C77 /* FCSearchDisplayDatasource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		2AE89D22162FCDA500200C77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2AE89D24162FCDA500200C77 /* FlashCardSimpleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlashCardSimpleTests.h; sourceTree = "<group>"; };
 		2AE89D25162FCDA500200C77 /* FlashCardSimpleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlashCardSimpleTests.m; sourceTree = "<group>"; };
+		2AE89D8D162FD43200200C77 /* FCSearchDisplayDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCSearchDisplayDatasource.h; sourceTree = "<group>"; };
+		2AE89D8E162FD43200200C77 /* FCSearchDisplayDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCSearchDisplayDatasource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,10 +122,10 @@
 		2AE89CF7162FCDA500200C77 /* FlashCardSimple */ = {
 			isa = PBXGroup;
 			children = (
+				2AE89D8B162FD3C800200C77 /* Datasource */,
+				2AE89D2F162FCE6B00200C77 /* Storyboard */,
 				2AE89D00162FCDA500200C77 /* FCAppDelegate.h */,
 				2AE89D01162FCDA500200C77 /* FCAppDelegate.m */,
-				2AE89D09162FCDA500200C77 /* MainStoryboard_iPhone.storyboard */,
-				2AE89D0C162FCDA500200C77 /* MainStoryboard_iPad.storyboard */,
 				2AE89D0F162FCDA500200C77 /* FCViewController.h */,
 				2AE89D10162FCDA500200C77 /* FCViewController.m */,
 				2AE89CF8162FCDA500200C77 /* Supporting Files */,
@@ -161,6 +164,24 @@
 				2AE89D21162FCDA500200C77 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2AE89D2F162FCE6B00200C77 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2AE89D09162FCDA500200C77 /* MainStoryboard_iPhone.storyboard */,
+				2AE89D0C162FCDA500200C77 /* MainStoryboard_iPad.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		2AE89D8B162FD3C800200C77 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				2AE89D8D162FD43200200C77 /* FCSearchDisplayDatasource.h */,
+				2AE89D8E162FD43200200C77 /* FCSearchDisplayDatasource.m */,
+			);
+			name = Datasource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +299,7 @@
 				2AE89CFE162FCDA500200C77 /* main.m in Sources */,
 				2AE89D02162FCDA500200C77 /* FCAppDelegate.m in Sources */,
 				2AE89D11162FCDA500200C77 /* FCViewController.m in Sources */,
+				2AE89D8F162FD43200200C77 /* FCSearchDisplayDatasource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

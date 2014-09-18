@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FCViewController : UIViewController
+@interface FCViewController : UIViewController <UISearchBarDelegate,
+                                                UISearchDisplayDelegate,
+                                                UITableViewDataSource>
+
+@property (retain, nonatomic) IBOutlet UISearchDisplayController *searchDisplayVC;
+
 
 @end

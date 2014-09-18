@@ -7,6 +7,7 @@
 //
 
 #import "FCViewController.h"
+#import "FCSearchDisplayDatasource.h"
 
 @interface FCViewController ()
 
@@ -14,10 +15,21 @@
 
 @implementation FCViewController
 
+
+- (void)dealloc
+{
+    [_searchDisplayVC release];
+    [super dealloc];
+}
+
+#pragma mark -
+#pragma mark viewDidLoad
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.searchDisplayController.searchResultsDataSource = [[FCSearchDisplayDatasource alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
